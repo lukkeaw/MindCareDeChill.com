@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCareDeChill.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ยินดีต้อนรับสู่ MindCareDeChill</h1>
+            <p>ที่นี่เราเป็นพื้นที่ปลอดภัย พร้อมรับฟังและให้คำปรึกษา โปรดใช้หัวใจในการพูดคุย</p>
+        </header>
+
+        <section class="form-section">
+            <h2>กรอกข้อมูลเพื่อขอคำปรึกษาหรือระบาย</h2>
+            <form action="send_email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">ชื่อ-นามสกุล:</label>
+                    <input type="text" id="name" name="name" required placeholder="กรุณากรอกชื่อของคุณ">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required placeholder="กรุณากรอกอีเมลของคุณ">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">ข้อความของคุณ:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="กรุณากรอกข้อความหรือคำปรึกษาที่ต้องการ"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">ส่งข้อมูล</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
